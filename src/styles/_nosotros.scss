@@ -1,0 +1,30 @@
+#nosotros{
+    padding-top:50px;
+    padding-bottom:100px;
+
+    p, h1{
+        font-family: 'Play', sans-serif;
+    }
+    .title-section{
+        display: inline;
+        border-bottom: 3px solid #f86868;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        font-family: 'Big Shoulders Text', cursive;
+    }
+    .header-content-left{
+       text-align: center;
+        img{
+            width:250px;
+            height:250px;
+        }
+    }
+    
+    .nosotros-row{
+        margin-top:70px;
+    }
+    .header-content-right{
+    text-align: center;
+    }
+}
+

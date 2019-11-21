@@ -1,0 +1,53 @@
+.reasons-container{
+    background: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .title-container{
+        margin-bottom: 30px;
+        font-family: 'Big Shoulders Text', cursive;
+        .title-reasons{
+            padding-left:40px;
+            margin-bottom:20px;
+            position: relative;
+
+            &:before{
+                content: " ";
+                content: " ";
+                border: 6px solid #f86868;
+                position: absolute;
+                left: 0;
+                top: 7px;
+                border-radius:25%;
+            }
+        }
+        .subtitle-reasons{
+            padding-left: 40px;
+        }
+
+    
+   
+    
+
+    }
+    .skill-section{
+        font-family: 'Play', sans-serif;
+        .icon-item{
+         
+            font-size: 60px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: #f86868;
+        }
+        .title-item{
+            margin-bottom: 20px;
+            margin-top:20px;
+        }
+         
+    }
+    
+
+    
+   
+
+}

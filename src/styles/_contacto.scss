@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+#contacto{
+    margin-top:0px;
+    background:rgba(10, 10, 10, 0.24705882352941178) url("../static/contacto.jpg");
+    min-height: 500px;
+    text-align:center;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom:0;
+  padding-top:0px;
+  font-family: 'Fjalla One', sans-serif;
+  position:relative;
+  display:flex;
+  padding-bottom:10px;
+
+  &::before{
+    background-color: #0a0a0a3f;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .row{
+      padding-top:20px;
+      h1 
+      {
+          text-align:center;
+          font-family: 'Fjalla One', sans-serif;
+          color:white;
+          text-shadow:2px 2px black;
+          font-size:40px;
+          margin-bottom:5px;
+          z-index:1;
+          width:100%;
+      }
+      
+      p
+      {
+          font-size:20px;
+          font-weight: 400;
+          color:white;
+          text-shadow:2px 2px black;
+          font-family: 'Fjalla One', sans-serif;
+          margin-top:0px;
+          z-index:1;
+          width:100%;
+      }
+      .btn.btn-danger{
+   
+        width: 76%;
+        position: absolute;
+        left: 15px;
+    
+        @media screen and (max-width:$break-middle) {
+            display:none;
+          }
+    
+          &.mobile-button{
+            display: block;
+            position: relative;
+            width: 80%;
+            left: 0;
+            margin-left: 10%;
+            margin-top:15px;
+              @media screen and (min-width:$break-middle) {
+                display:none;
+              }
+    
+          }
+        
+    }
+  
+  
+    input.input-form
+{
+    display:block;
+    width:80%;
+  padding: 20 2px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: none;
+ 
+  font-family: 'Fjalla One', sans-serif;
+  color:white;
+  text-shadow:2px 2px black;
+  font-size: 16px;
+  letter-spacing:1px;
+
+  @media screen and (max-width:$break-middle) {
+   // text-align: center;
+    margin-left:10%;
+  }
+  
+  &::placeholder
+    {
+    color:white;
+    text-shadow:2px 2px black;
+    font-size: 18px;
+    font-weight: 600;   
+    }
+
+  &::-ms-input-placeholder{
+    color:white;
+    text-shadow:2px 2px black;
+    font-size: 18px;
+    font-weight: 600;  
+
+  }
+}
+textarea
+{
+   
+  border-style:solid;
+    color: rgb(251, 253, 255);
+    padding:5px;
+  background: transparent;
+  border-radius:5px;
+ border-width: 2px;
+ margin-top:20px;
+ border-color:rgb(241, 241, 241);
+ font-size:16px;
+ color:white;
+ text-shadow:2px 2px black;
+ font-family: 'Fjalla One', sans-serif;
+
+ 
+ &::placeholder
+{
+    color:white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size:20px;
+    text-shadow: 2px 2px black;
+
+}
+
+&::-ms-input-placeholder{
+  color:white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size:20px;
+  text-shadow: 2px 2px black;
+}
+
+
+
+@media screen and (max-width:$break-middle) {
+   width:80%;
+  }
+   
+}
+    }
+
+
+
+
+
+
+}

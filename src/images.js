@@ -1,0 +1,10 @@
+import "./static/logo.png";
+import "./static/aire-comprimido.png";
+import "./static/control-procesos.jpg";
+import "./static/electroneumatica-min.jpg";
+import "./static/repuestos.jpg";
+import "./static/panel-solar-min.jpg";
+import "./static/inst-industriales.jpg";
+import "./static/gases-medicinales.jpg";
+import "./static/electroneumatica.jpg";
+import "./static/electroneumatica.png";

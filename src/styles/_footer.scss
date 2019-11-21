@@ -1,0 +1,73 @@
+.footer{
+    height:auto;
+    background-color: #343a40;
+    color:white;
+    font-family: 'Big Shoulders Text', cursive;
+    padding-top:40px;
+    padding-bottom:25px;
+
+    .footer-section{
+        text-align: center;
+    }
+
+    .link-list{
+        text-align: initial;
+        display: inline-block;
+
+        li{
+        a:hover{
+            color:rgb(248, 104, 104);
+            cursor:pointer;
+        }
+    }
+}
+
+    //Social nettwork icons
+    .at-follow-tbx-element{
+
+        .at-follow-tbx-element{
+            margin-top:35px;
+        }
+        .addthis_toolbox{
+            display:flex;
+            justify-content: center;
+        }
+
+        .at-icon-wrapper{
+            background-color: transparent!important;
+            border:1px solid;
+        }
+
+    }
+
+    .contact-list{
+        text-align: initial;
+        width: auto;
+        display: inline-block;
+        li{
+            margin-bottom:30px;
+            padding-left:50px;
+            position:relative;
+            .icon-title{
+                position:absolute;
+                top:0;
+                left:0;
+                font-size:32px;
+            }
+
+            .contact-text{
+                display:block;
+            }
+        }
+    }
+  
+    .footer-line{
+        background-color: #a1a6ab;
+    }
+    .footer-copyright{
+        color:#a1a6ab;
+    }
+
+
+
+}

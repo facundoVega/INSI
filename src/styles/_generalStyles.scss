@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap'); 
+
+$break-middle: 768px;
+$break-long: 996px;
+$break-xs: 350px;
+html {
+    scroll-behavior: smooth;
+  }
+ul{
+    list-style: none;
+    padding:0;
+}
+a{
+    color:white;
+    &:hover{
+        text-decoration: none;
+        color:white;
+    }
+    }
+    
+  

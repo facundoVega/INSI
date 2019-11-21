@@ -1,0 +1,38 @@
+.resume-contact-container{
+    background: #343a40;
+    color: white;
+    display: flexx;
+    display: flex;
+    justify-content: center;
+    font-family: 'Big Shoulders Text', cursive;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width:100%;
+    @media screen and (max-width:$break-middle) {
+       padding-left:10px;
+       justify-content: flex-start ;
+
+      }
+      @media screen and (max-width:$break-xs) {
+        font-size: 10px;
+        padding-bottom: 5px;
+    
+ 
+       }
+
+    .tel{
+        margin-right: 20px;
+        
+    }
+    i{
+        margin-right: 10px;
+    }
+
+    .language-select{
+        position: absolute;
+        right: 10px;
+        top: 3px;
+
+    }
+}

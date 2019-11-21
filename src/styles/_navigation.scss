@@ -1,0 +1,19 @@
+.navbar{
+position:fixed;
+top:20px;
+width:100%;
+z-index:3;
+
+}
+.navbar-toggler{
+    font-size:2rem;
+}
+.nav-link{
+    font-family: 'Big Shoulders Text', cursive;
+    color:white;
+    font-size:22px;
+
+    &:hover{
+        color:rgb(248, 104, 104);
+    }
+}
