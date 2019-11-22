@@ -12,6 +12,7 @@
 @import "./_footer";
 @import "./_resume-contact";
 @import "./_impact";
+@import "./_spinner";
 
 
 #services, #aboutUs, #contact{

@@ -1,21 +1,39 @@
+
 $('#contactSendButton').on("click", function(event){
-
-    let fieldValue = obtainFieldValues();
-    event.preventDefault();
-    window.open('mailto:horacio_facundo.vega@hotmail.com');
-   
-   
+  event.preventDefault();
+  sendEmail(obtainFieldValues());
+  
+  
   });
-
+    
   function obtainFieldValues(){
     let data = {
-        phone: $('placeholderPhone').fieldValue,
-        name: $('placeholderName').fieldValue,
-        mail:$('placeholderMail').fieldValue,
-        company:$('placeholderCompany').fieldValue,
-        message:$('placeholderTextarea').fieldValue
+      phone: $('#placeholderPhone').val(),
+      name: $('#placeholderName').val(),
+      mail:$('#placeholderMail').val(),
+      company:$('#placeholderCompany').val(),
+      message:$('#placeholderTextarea').val()
     }
-    
-    console.log("Data", data);
     return data;
+  }
+
+ function sendEmail(data){
+   console.log("Entra al metodo");
+showSpinner();
+setTimeout(function(){hideSpinner() }, 3000);
+  //  console.log("Valores a enviar", data );
+  // $.post("enviar.php",
+  // data,
+  // function(data,status){
+  //   alert("Data: " + data + "\nStatus: " + status);
+  // });
+  }
+
+  function showSpinner(){
+    $('#spinnerContainer').removeClass("hide");
+    $('#spinnerContainer').addClass("show");
+  }
+  function hideSpinner(){
+    $('#spinnerContainer').removeClass("show");
+    $('#spinnerContainer').addClass("hide");
   }

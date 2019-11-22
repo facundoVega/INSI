@@ -1,15 +1,25 @@
 <?php
-    $destino = "horacio_facundo.vega@hotmail.com";
-    $asunto = "Contacto desde Insis WEB";
+    if(isset($_POST['name'], $_POST['mail'], $_POST['phone'], $_POST['message'], $_POST['company'])){
+        //Post data
+        $name = $_POST['name'];
+        $email = $_POST['mail'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+        $company = $_POST['company'];
+        //mail settings
+        $to = "horacio_facundo.vega@hotmail.com";
+        $subject = 'Contacto de pagina INSI';
 
-    $nombre = $_POST['name'];
-    $mensaje = $_POST['message'];
-    $correo = $_POST['mail'];
-    $telefono = $_POST['phone'];
-    $empresa = $_POST['company'];
+        $body = "NOMBRE: ".$name . "\n MAIL: ". $email . "\n TELEGONO: ". $phone."\n COMPANY: ". $company . "\n Mensaje: ".$message; 
+        if(mail($to, $subject, $body)){
+                    $feedback = '*Message sent! You will receive a reply shortly!';
+                }else{
+                    $feedback = '*Message failed to send';
+                }
 
-    $contenido = "Nombre: " . $nombre  ."\nCorreo: " . $telefono . "\nTelefono: " . $telefono . "\nMensaje: " ."\nEmpresa: ". $empresa . "\n". $mensaje;
-
-    mail($destino, $asunto , $contenido);
+    }else{
+        $feedback = 'Missing Params';
+    }
+    echo $feedback;
 
 ?>

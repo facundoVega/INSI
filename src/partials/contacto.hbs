@@ -1,7 +1,7 @@
   <a id="contact"></a>
  <section id="contacto" >
       <div class="container mt-5">
-        <form  action="../tmp/enviar.php" method="post" class="row">
+        <form  type="POST"  class="row" >
           <div class="col-12">
             <h1 id="contactoTitle">Trabaje con nosotros</h1>
             <p id="contactoSubtitle">Complete los campos, nos contactaremos con usted.</p>
@@ -22,16 +22,17 @@
                <input id="placeholderPhone" class="input-form" type="tel" placeholder="Telefono" name="phone" required>
            </div>
             </div>  
-            <button id="contactSendButton" type="submit" class="btn btn-danger">Enviar</button>
+            <button id="contactSendButton" type="button" class="btn btn-danger">Enviar</button>
           </div> 
           
           <div class="col-md-6 col-sm-12">
             <div class="header-content-right">
               <textarea id="placeholderTextarea" class="input-form" placeholder="Mensaje..." rows="7" cols="45" name="message" required></textarea>
              
-             <button  id="sendButton" class="btn btn-danger mobile-button">Enviar</button>
+             <button  id="sendButton" type="button" class="btn btn-danger mobile-button">Enviar</button>
             </div>
           </div>
         </form>
         </div>
+          {{> spinner }}
     </section>
