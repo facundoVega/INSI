@@ -24,7 +24,7 @@
     position: absolute;
     width: 100%;
   }
-
+ 
   .row{
       padding-top:20px;
       h1 
@@ -75,6 +75,7 @@
         
     }
   
+   
   
     input.input-form
 {
@@ -88,9 +89,14 @@
  
   font-family: 'Fjalla One', sans-serif;
   color:white;
-  text-shadow:2px 2px black;
+  text-shadow:1px 1px black;
   font-size: 16px;
   letter-spacing:1px;
+
+  &.error-input{
+    border-bottom:3px solid #ff0000a1;
+    background: #ff050557;
+  }
 
   @media screen and (max-width:$break-middle) {
    // text-align: center;
@@ -129,6 +135,11 @@ textarea
  text-shadow:2px 2px black;
  font-family: 'Fjalla One', sans-serif;
 
+ &.error-input{
+  border:3px solid #ff0000a1;
+  background: #ff050557;
+}
+ 
  
  &::placeholder
 {
@@ -156,7 +167,18 @@ textarea
     }
 
 
-
+    #serverMessage{
+      margin-top:20px;
+      text-shadow: 1px 1px black;
+      span.form-error{
+        color:red;
+        
+      }
+      span.form-success{
+        color:rgb(2, 204, 2);
+       
+      }
+    }
 
 
 

@@ -1,10 +1,11 @@
+import spinner from './spinnerUi';
 
 $('#contactSendButton').on("click", function(event){
   event.preventDefault();
   sendEmail(obtainFieldValues());
+});
   
   
-  });
     
   function obtainFieldValues(){
     let data = {
@@ -18,22 +19,58 @@ $('#contactSendButton').on("click", function(event){
   }
 
  function sendEmail(data){
-   console.log("Entra al metodo");
-showSpinner();
-setTimeout(function(){hideSpinner() }, 3000);
-  //  console.log("Valores a enviar", data );
-  // $.post("enviar.php",
-  // data,
-  // function(data,status){
-  //   alert("Data: " + data + "\nStatus: " + status);
-  // });
+  spinner.show();
+  $.post("enviar.php",
+  data,
+  function(data,status){
+    spinner.hide();
+    data = JSON.parse(data);
+    showServerMessages(data);
+  });
+} 
+    
+
+
+  function showServerMessages(data){
+    $('#serverMessage').html(data.message);
+    removeInputErrors();
+    if(data.errorExist){
+      paintErrorsInput(data.inputErrors);
+    }
+    else{
+      cleanInputs();
+      setTimeout(function(){ $('#serverMessage').html("") }, 7000);
+    }
   }
 
-  function showSpinner(){
-    $('#spinnerContainer').removeClass("hide");
-    $('#spinnerContainer').addClass("show");
+
+  //Empty inputs value.
+  function cleanInputs(){
+    $('#placeholderPhone').val("");
+    $('#placeholderName').val("");
+    $('#placeholderMail').val("");
+    $('#placeholderCompany').val("");
+    $('#placeholderTextarea').val("");
   }
-  function hideSpinner(){
-    $('#spinnerContainer').removeClass("show");
-    $('#spinnerContainer').addClass("hide");
+
+
+  //Remove the mark of the inputs wich had had errors.
+  function removeInputErrors(){
+    $('#placeholderPhone').removeClass("error-input");
+    $('#placeholderName').removeClass("error-input");
+    $('#placeholderMail').removeClass("error-input");
+    $('#placeholderCompany').removeClass("error-input");
+    $('#placeholderTextarea').removeClass("error-input");
   }
+
+
+  //Mark each input wich contains errors
+  function paintErrorsInput(inputs){
+    inputs.forEach(input => {
+      $(input).val("");
+      $(input).addClass("error-input");
+    });
+  }
+
+
+ 
