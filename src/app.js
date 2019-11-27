@@ -4,3 +4,4 @@ import "./translator.js";
 import "./serviceUI.js";
 import "./slider.js";
 import "./contactUi.js";
+import "./productosCarrousel";

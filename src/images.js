@@ -8,3 +8,7 @@ import "./static/inst-industriales.jpg";
 import "./static/gases-medicinales.jpg";
 import "./static/electroneumatica.jpg";
 import "./static/electroneumatica.png";
+import "./static/valve.jpg";
+import "./static/repuesto1.jpg";
+import "./static/repuesto2.jpg";
+import "./static/repuesto3.jpg";

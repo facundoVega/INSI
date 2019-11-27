@@ -10,9 +10,14 @@ const close = $('#closeIcon');
 
 select.on('click', event=>{
     if(event.target.classList.contains('service-image')){
+        if(event.target.id == ServicesEnum.ACCESORIES){
+            $('#carrouselContainer').css('display','flex');
+            return;
+        }
         const infoServiceSelected = getDataToRender(event.target.id);
         setSelectedService(infoServiceSelected);
-        $('#selectedServiceContainer').css('display', 'flex');
+       $('#selectedServiceContainer').css('display', 'flex');
+       
     }
 });
 
