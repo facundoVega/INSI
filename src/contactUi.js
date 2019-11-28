@@ -1,12 +1,20 @@
 import spinner from './spinnerUi';
 
+//SEND BUTTON ON DESKTOP
 $('#contactSendButton').on("click", function(event){
   event.preventDefault();
   sendEmail(obtainFieldValues());
 });
+
+//SEND BUTTON ON MOBILE
+$('#sendButtonMobile').on("click", function(event){
+  event.preventDefault();
+  sendEmail(obtainFieldValues());
+});
   
+
   
-    
+
   function obtainFieldValues(){
     let data = {
       phone: $('#placeholderPhone').val(),
