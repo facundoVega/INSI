@@ -5,14 +5,12 @@
     top:0;
     left:0;
     z-index: 2;
-    background: rgba(34, 34, 34, 0.55);
+    background-color: rgba(0, 60, 255, 0.226);
     align-items: center;
     display:none;
 
 
 }
-
-
 .bce-component {
     overflow: hidden;
     position: relative;
@@ -29,6 +27,7 @@
     .title-accesories-carrousel{
         text-align:center;
         font-family: 'Play', sans-serif;
+        color:white;
 
     }
     i{
@@ -37,6 +36,8 @@
         right: 10px;
         z-index:4;
         font-size:1.5rem;
+        cursor:pointer;
+        color:white;
     }
 }
 
@@ -44,13 +45,7 @@
     margin-left: -33.3333%;
     display: flex;
 }
-.bce-inner.two-items {
-    margin-left: -50%;
-}
-.bce-inner.one-item {
-    width: 100%;
-    margin-left: 0;
-}
+
 
 .bce-item {
     width: 33.3333%;
@@ -58,12 +53,7 @@
     display: flex;
     flex-direction: column;
 }
-.bce-item.two-items {
-    width: 50%;
-}
-.bce-item.one-item {
-    width: 100%;
-}
+
 
 .bce-item-img {
     width: 100%;
@@ -77,8 +67,8 @@
     color: #ffffff;
     padding: 16px;
     flex: 1 1 auto;
-    h4{
-        color:black;
+    h6{
+        color:white;
         font-family: 'Play', sans-serif;
     }
 }
@@ -124,11 +114,6 @@
 }
 
 
-// .bce-controls.one-item .bce-controls-btn,
-// .bce-controls.two-items .bce-controls-btn,
-// .bce-controls.three-items .bce-controls-btn {
-//     display: none;
-// }
 
 @media only screen and (max-width: 1199.98px) {
     .bce-component {
@@ -139,9 +124,7 @@
     .bce-inner {
         margin-left: -50%;
     }
-    // .bce-inner.three-items {
-    //     width: 200%;
-    // }
+
     
     .bce-item {
         width: 50%;
@@ -155,10 +138,6 @@
         height: 40px;
         width: 40px;
     }
-
-    // .bce-controls.three-items .bce-controls-btn {
-    //     display: flex;
-    // }
     .bce-controls-btn:hover {
         background-color: #e4e4e4;
     }
@@ -176,17 +155,10 @@
     .bce-inner {
         margin-left: -100%;
     }
-    // .bce-inner.two-items {
-    //     width: 300%;
-    //     margin-left: -100%;
-    // }
-    // .bce-inner.three-items {
-    //     width: 400%;
-    // }
+ 
 
-    .bce-item,
-    .bce-item.two-items,
-    .bce-item.one-item {
+    .bce-item
+     {
         width: 100%;
         margin: 10px 15px;
     }
@@ -194,10 +166,7 @@
     .bce-copy {
         padding: 10px;
     }
-    // .bce-icon {
-    //     height: 40px;
-    //     width: 40px;
-    // }
+
     .bce-title {
         font-size: 12px;
         padding-left: 6px;
@@ -211,7 +180,5 @@
         width: 30px;
     }
 
-    // .bce-controls.two-items .bce-controls-btn {
-    //     display: flex;
-    // }
+
 }

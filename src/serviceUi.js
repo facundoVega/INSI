@@ -1,11 +1,9 @@
 import { ServicesEnum } from './serviceEnum.js'
 import {  currentLanguage } from './app.js'
 
-
-
-
 const select = $('#serviceList');
 const close = $('#closeIcon');
+const closeProducts = $('#productsCloseIcon');
 
 
 select.on('click', event=>{
@@ -17,12 +15,17 @@ select.on('click', event=>{
         const infoServiceSelected = getDataToRender(event.target.id);
         setSelectedService(infoServiceSelected);
        $('#selectedServiceContainer').css('display', 'flex');
-       
     }
 });
 
+//Info service close icon
 close.on('click', ()=>{
     $('#selectedServiceContainer').css('display', 'none');
+});
+
+//Products carrousel close icon
+closeProducts.on('click', ()=>{
+    $('#carrouselContainer').css('display','none');
 });
     
 //Set the current title and image to the selected container
@@ -50,11 +53,8 @@ function getDataToRender(id){
             data.title =currentLanguage == "english" ? "Electropneumatic":"Electroneumatica";
             data.img = "./static/electroneumatica-min.jpg";
           break;
-        default:
-                data.title =currentLanguage == "english" ? "Accesories" :"Accesorios";
-                data.img = "./static/repuestos.jpg";
-            }
-
+      
+    }
             return data;
          
 }
