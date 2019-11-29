@@ -6,6 +6,7 @@ const miniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
 
     entry: './src/app.js',
+    
 
     output: {
         path: path.resolve(__dirname, '../dist'),
@@ -58,9 +59,9 @@ module.exports = {
                                     interlaced: false,
                                 },
                                 // the webp option will enable WEBP
-                                webp: {
-                                    quality: 75
-                                }
+                                // webp: {
+                                //     quality: 75
+                                // }
                             }
                         }
 
@@ -71,6 +72,10 @@ module.exports = {
             {
                 test: /\.hbs/,
                 loader: 'handlebars-loader'
+            },
+            {
+                test:/\.js$/,
+                loader:'babel-loader'
             }
         ]
     },

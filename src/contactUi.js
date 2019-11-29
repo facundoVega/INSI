@@ -34,6 +34,10 @@ $('#sendButtonMobile').on("click", function(event){
     spinner.hide();
     data = JSON.parse(data);
     showServerMessages(data);
+  })
+  .fail(function(error){
+    spinner.hide();
+    console.error("server error");
   });
 } 
     
