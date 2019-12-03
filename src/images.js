@@ -1,4 +1,5 @@
 import "./static/logo.png";
+import "./static/parker-logo.png";
 import "./static/aire-comprimido.png";
 import "./static/control-procesos.jpg";
 import "./static/electroneumatica-min.jpg";

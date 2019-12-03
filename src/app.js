@@ -5,3 +5,5 @@ import "./serviceUI.js";
 import "./slider.js";
 import "./contactUi.js";
 import "./productosCarrousel";
+import "./browserHandle.js";
+

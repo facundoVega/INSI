@@ -51,6 +51,8 @@ export var translation = {
         impactSubtitle:"The needs of your industry",
         impactParragraph:"Our company has successfully completed a wide range of projects. We are qualified to take on even the largest projects in the industry, for improvement applications.",
 
+        //Brand:
+        brandSubtitle: "Parker support us in Argentine",
         //Contacto
         contactoTitle:"Work with us",
         contactoSubtitle:"Fill in the fields, we'll contact you",
@@ -122,6 +124,7 @@ export var translation = {
          impactSubtitle:"las necesidades de tu industria",
          impactParragraph:"Nuestra empresa ha completado con éxiot una amplia gama de proyectos. Estamos calificados para asumir incluso los proyectos mas grandes en la industria, aportando para aplicaciones de mejoras",
 
+         brandSubtitle: "Contamos con el apoyo de Parker en Argentina",
         //Contacto 
         contactoTitle:"Trabaje con nosotros",
         contactoSubtitle:"Complete los campos, nos contactaremos con usted",

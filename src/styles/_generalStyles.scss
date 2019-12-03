@@ -11,6 +11,21 @@ html {
 
   body{
     background-color:#343a40;
+
+    .not-render-message-container{
+      background: white;
+      border:1px solid black;
+      width:80vw;
+      margin-left:10vw;
+      margin-top:10vh;
+      height: 80vh;
+      padding:10px;
+      text-align: center;
+      min-width:300px;
+      min-height:300px;
+      font-family: 'Big Shoulders Text', cursive;
+
+    }
   }
 ul{
     list-style: none;

@@ -1,0 +1,43 @@
+.brand-container{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom:100px;
+    font-family: 'Big Shoulders Text', cursive;
+
+
+    .brand-image-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand-info-container{
+     
+        
+
+        .title-brand{
+            color: grey;
+            padding-left:60px;
+        }
+        .subtitle-brand{
+            padding-left: 60px;
+            position: relative;
+
+            &:before{
+                content: "";
+                height: 4px;
+                left: 0;
+                position: absolute;
+                top: calc(0.5em - -10px);
+                width: 40px;
+                background: #f86868;
+            }
+        }
+
+        .brand-info{
+            padding-left:60px;
+        }
+     
+    }
+  
+}
