@@ -1,60 +1,32 @@
-import { ServicesEnum } from './serviceEnum.js'
-import {  currentLanguage } from './app.js'
-
 const select = $('#serviceList');
-const close = $('#closeIcon');
-const closeProducts = $('#productsCloseIcon');
-
 
 select.on('click', event=>{
-    if(event.target.classList.contains('service-image')){
-        if(event.target.id == ServicesEnum.ACCESORIES){
-            $('#carrouselContainer').css('display','flex');
-            return;
-        }
-        const infoServiceSelected = getDataToRender(event.target.id);
-        setSelectedService(infoServiceSelected);
-       $('#selectedServiceContainer').css('display', 'flex');
-    }
-});
-
-//Info service close icon
-close.on('click', ()=>{
-    $('#selectedServiceContainer').css('display', 'none');
-});
-
-//Products carrousel close icon
-closeProducts.on('click', ()=>{
-    $('#carrouselContainer').css('display','none');
-});
     
-//Set the current title and image to the selected container
-function setSelectedService(serviceSelected){
-    $('#selectedServiceTitle').html(serviceSelected.title);
-    $('#selectedServiceImage').attr('src', serviceSelected.img);
+    if(event.target.classList.contains('service-item')){
+        styleElement(event.target) ;
+        showSelectedService(event.target);
+    }
+});
+
+
+//Function related to styling the selected element
+function styleElement(element){
+    let parentId = element.dataset.parentid;
+    removeAllClasses('arrow');
+    $('#'+parentId).addClass('arrow');
 }
 
-//Return the data that need to be render according the id of  selected image.
-function getDataToRender(id){
-    let data ={
-        title:"",
-        img:""
-    }
-    switch(id) {
-       case ServicesEnum.INDUSTRY:
-            data.title = currentLanguage == "english" ? "Industrial Inst" :"Inst. Industriales";
-            data.img = "./static/inst-industriales.jpg";
-          break;
-        case ServicesEnum.SOLARPANEL:
-            data.title =currentLanguage == "english" ? "Solar Panels":"Paneles solares";
-            data.img = "./static/panel-solar-min.jpg";
-          break;
-        case ServicesEnum.ELECTRONEUMATIC:
-            data.title =currentLanguage == "english" ? "Electropneumatic":"Electroneumatica";
-            data.img = "./static/electroneumatica-min.jpg";
-          break;
-      
-    }
-            return data;
-         
+function removeAllClasses(className){
+    $('#firstServiceItem').removeClass(className);
+    $('#secondServiceItem').removeClass(className);
+    $('#thirdServiceItem').removeClass(className);
+    $('#fourthServiceItem').removeClass(className);
 }
+//End of functions wich styling the selected element.
+
+function showSelectedService(element){
+
+}
+
+
+

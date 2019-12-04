@@ -1,5 +1,5 @@
 <a id="services"></a>
-<div class="container-fluid services-container" id="servicios">
+{{!-- <div class="container-fluid services-container" id="servicios">
   <div class="row">
     <div class="col-12" id="serviceList">
       <h2 class="text-center" id="serviciosTittle">Otros de nuestros servicios</h2>
@@ -41,4 +41,22 @@
   </div>
   {{> serviceInfo }}
     {{> productsCarrousel}}
+</div> --}}
+<div class="container-fluid services-container">
+  <div class="row">
+    <div class="col-3 services-list-container">
+      <h1 >Otros servicios</h1>
+      <ul id="serviceList">
+        <li id="firstServiceItem" > <span class="service-item" data-parentId="firstServiceItem"  id="serviciosFirstTitle"> Instalaciones industriales</span></li>
+        <li id="secondServiceItem" ><span class="service-item" data-parentId="secondServiceItem"  id="serviciosSecondTitle">Paneles solares</span></li>
+        <li id="thirdServiceItem"  ><span class="service-item" data-parentId="thirdServiceItem" id="serviciosThirdTitle">Electroneumatica e hidraulica</span></li>
+        <li id="fourthServiceItem" ><span class="service-item" data-parentId="fourthServiceItem" id="serviciosFourthTitle">Accesorios</span></li>
+      </ul>
+    </div>
+    <div class="col-9 service-details-container">
+      <h1 id="serviceDetailTitle" class="service-details-title">Titulo del servicio actual</h1>
+      <p "serviceDetailInfo" class="service-details-info">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+      <img id="serviceDetailImage" class="service-image" src="./static/panel-solar-min.jpg" alt="" width="100%" height="auto" id="serviceSelectedPaneles">
+    </div>
+  </div>
 </div>
