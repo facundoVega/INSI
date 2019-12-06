@@ -39,13 +39,13 @@ function removeAllClasses(className){
 
 function showSelectedService(element){
     
-    $('#accesoriesList').removeClass('show-accesories-list');
+    $('#Accesories').removeClass('show-accesories');
     $('#serviceDetailTitle').html(servicesText[element.dataset.fieldtext][currentLanguage].title);
     $('#serviceDetailInfo').html(servicesText[element.dataset.fieldtext][currentLanguage].info);
     
     if(element.dataset.fieldtext == accesoriesField){
         $('#serviceContainer').html('');
-        $('#accesoriesList').addClass('show-accesories-list');
+        $('#Accesories').addClass('show-accesories');
         
        return 
     }
