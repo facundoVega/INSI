@@ -34,7 +34,7 @@ export var translation = {
 
         //Servicios
         serviciosTittle:"Other of our services",
-        serviciosFirstTitle:"Industrial Fac",
+        serviciosFirstTitle:"Industrial Facilities",
         serviciosSecondTitle:"Solar panels",
         serviciosThirdTitle:"Electropneumatics",
         serviciosFourthTitle:"Accessories",
@@ -42,9 +42,6 @@ export var translation = {
         masInfoPanel:"More info..",
         masInfoElectro:"More info..",
         masInfoRepuestos:"More info..",
-
-      
-
 
         //Impacto
         impactTitle:"we serve to connect",
@@ -164,10 +161,11 @@ export var translation = {
             placeholderTextarea:"Mensaje..."
 
         }
-
     }
-
-
 };
+
+ 
+
+
 
 

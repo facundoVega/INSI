@@ -6,7 +6,6 @@
 @import "./_slider";
 @import "./_nosotros";
 @import "./_services";
-@import "./_serviceInfo";
 @import "./_contacto";
 @import "./_reasons";
 @import "./_footer";
@@ -14,6 +13,7 @@
 @import "./_impact";
 @import "./_spinner";
 @import "./_productsCarrousel";
+@import "./_accesoriesDesktopView";
 
 
 #services, #aboutUs, #contact{

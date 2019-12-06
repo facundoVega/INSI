@@ -1,0 +1,28 @@
+ul.accesories-list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    display:none;
+
+    &.show-accesories-list{
+        display:flex;   
+    }
+
+    .accesorie-item{
+        width: 30%;
+        padding: 20px;
+        margin-left: 2.5%;
+        margin-bottom: 30px;
+        border:2px solid #343a40;
+
+        .accesorie-title{
+            text-align: center;
+            margin-top:5px;
+        }
+
+        .accesorie-info{
+            color:#5D5D5D;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    }
+}
