@@ -7,3 +7,10 @@ import "./contactUi.js";
 import "./productosCarrousel";
 import "./browserHandle.js";
 
+
+
+$(window).load(function() {
+   $('#mainSpinner').addClass('hide');
+});
+ 
+

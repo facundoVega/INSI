@@ -41,3 +41,21 @@ a{
     }
     
   
+#mainSpinner{
+  width:100%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b060661;
+  z-index: 9999;
+	background-color:#343a40;
+
+  &.hide{
+    display:none;
+
+  }
+}

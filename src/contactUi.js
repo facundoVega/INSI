@@ -1,4 +1,4 @@
-import spinner from './spinnerUi';
+
 
 //SEND BUTTON ON DESKTOP
 $('#contactSendButton').on("click", function(event){
@@ -27,7 +27,7 @@ $('#sendButtonMobile').on("click", function(event){
   }
 
  function sendEmail(data){
-  spinner.show();
+  openSpinnerSection();
   $.post("enviar.php",
   data,
   function(data,status){
@@ -42,6 +42,12 @@ $('#sendButtonMobile').on("click", function(event){
 } 
     
 
+  function openSpinnerSection(){
+    $('#spinnerSection').addClass('show');
+  }
+  function closeSpinnerSection(){
+    $('#spinnerSection').removeClass('show');
+  }
 
   function showServerMessages(data){
     $('#serverMessage').html(data.message);
